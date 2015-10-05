@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <RelativeLayout
+        android:id="@+id/lAuthCode"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:background="@drawable/topbar" >
+
+        <ImageView
+            android:id="@+id/imgLogoAuthCode"
+            style="@style/imgLogo"
+          	android:layout_alignParentLeft="true"
+            android:src="@drawable/logoauth" />
+
+        <TextView
+            android:id="@+id/textAuthCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Authorization"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+  <LinearLayout
+            android:id="@+id/lAuthCode5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="10dp"
+          >
+        <ImageView
+            android:id="@+id/imgNext"
+            android:layout_width="12dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+           style="@style/marginRightArrow"
+            android:background="@drawable/nexticon" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lAuthCode1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="29"
+        android:gravity="center|center_horizontal"
+        android:orientation="vertical" >
+		
+        <TextView
+            android:id="@+id/textEnterCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:textColor="#000"
+            android:text="Enter SMS Code"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:id="@+id/lAuthCode2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgCode1"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/buttoncodepress" />
+
+            <ImageView
+                android:id="@+id/imgCode2"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/buttoncodepress" />
+
+            <ImageView
+                android:id="@+id/imgCode3"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/buttoncodepress" />
+
+            <ImageView
+                android:id="@+id/imgCode4"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/buttoncodepress" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="59" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center" >
+
+            <Button
+                android:id="@+id/buttonCOne"
+                style="@style/phoneButton"
+                android:background="@drawable/buttononepress" >
+            </Button>
+
+            <Button
+                android:id="@+id/buttonCTwo"
+                style="@style/phoneButton"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/buttontwopress"
+                android:gravity="center" >
+            </Button>
+
+            <Button
+                android:id="@+id/buttonCThree"
+                style="@style/phoneButton"
+                android:background="@drawable/buttonthreepress"
+                android:gravity="right" >
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/buttonCFour"
+                style="@style/phoneButton"
+                android:background="@drawable/buttonfourpress"
+                android:gravity="center" >
+            </Button>
+
+            <Button
+                android:id="@+id/buttonCFive"
+                style="@style/phoneButton"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/buttonfivepress" >
+            </Button>
+
+            <Button
+                android:id="@+id/buttonCSix"
+                style="@style/phoneButton"
+                android:background="@drawable/buttonsixpress"
+                android:gravity="center" >
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/buttonCSeven"
+                style="@style/phoneButton"
+                android:background="@drawable/buttonsevenpress"
+                android:gravity="center" >
+            </Button>
+
+            <Button
+                android:id="@+id/buttonCEight"
+                style="@style/phoneButton"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/buttoneightpress"
+                android:gravity="center" >
+            </Button>
+
+            <Button
+                android:id="@+id/buttonCNine"
+                style="@style/phoneButton"
+                android:background="@drawable/buttonninepress"
+                android:gravity="center" >
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/buttonCBlank"
+                style="@style/phoneButton"
+                android:background="@android:color/transparent"
+                android:gravity="center" >
+            </Button>
+
+            <Button
+                android:id="@+id/buttonCZero"
+                style="@style/phoneButton"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/buttonzeropress"
+                android:gravity="center" >
+            </Button>
+
+            <Button
+                android:id="@+id/buttonCBack"
+                android:layout_width="15dp"
+                android:layout_height="24dp"
+                android:background="@drawable/backbuttonpress"
+                android:layout_marginRight="12dp"
+                android:gravity="center" >
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/bottomLine"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/bottomline"
+        android:baselineAlignBottom="true" />
+
+</LinearLayout>

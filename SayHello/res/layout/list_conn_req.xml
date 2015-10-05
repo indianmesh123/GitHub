@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:weightSum="100"
+    android:background="#fff">
+     <LinearLayout 
+        android:id="@+id/lItemChat"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+     	android:layout_weight="25"
+        >
+<ImageView 
+    android:id="@+id/imgConnReq"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:background="@drawable/avatar_list_view"        
+    />
+</LinearLayout>
+<LinearLayout 
+		android:id="@+id/lItemChat2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+     	android:layout_weight="50"
+     	android:orientation="vertical" >
+	    <TextView 
+	        android:id="@+id/textItemChatName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="CityGuy245"/>
+	    <TextView 
+	        android:id="@+id/textItemMessage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="New sailor in town.Travelling and need some friends to me..."/>
+</LinearLayout>
+<LinearLayout 
+    android:id="@+id/lItemChat3"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="25"
+    >
+    <ImageView 
+        android:id="@+id/imgChatIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/icn_chat"/>
+</LinearLayout>
+</LinearLayout>

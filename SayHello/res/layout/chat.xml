@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical"
+    android:weightSum="100" >
+    
+    <RelativeLayout
+        android:id="@+id/lSearch1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@drawable/topbar" >
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/backicon"/>
+
+        <TextView
+            android:id="@+id/textSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Search"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </RelativeLayout>
+   
+        <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="#FCFCFC"
+    android:layout_weight="15"
+    android:orientation="horizontal"
+    android:weightSum="100" >
+
+    <ImageView
+        android:id="@+id/imgCoffeeActivity"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="20"
+        android:background="@drawable/icon_coffee" />
+
+    <LinearLayout
+        android:id="@+id/lListEditActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textMeeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coffee at Starbucks anybody?"
+            android:textColor="#000" />
+
+        <LinearLayout
+            android:id="@+id/lListEditActivity1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/textDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today-Wed |"
+                android:textColor="#E5594A" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:30-12:30"
+                android:textColor="#4DCDC0" >
+            </TextView>
+        </LinearLayout>
+        </LinearLayout>
+         <ImageView
+        android:id="@+id/imgExpand"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btnexpand" />
+    </RelativeLayout>
+     <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="#FCFCFC"
+    android:layout_weight="15"
+    android:orientation="horizontal"
+    android:weightSum="100" >
+
+    <ImageView
+        android:id="@+id/imgCoffeeActivity1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="20"
+        android:background="@drawable/icon_coffee" />
+
+    <LinearLayout
+        android:id="@+id/lListEditActivity10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textMeeting1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coffee at Starbucks anybody?"
+            android:textColor="#000" />
+
+        <LinearLayout
+            android:id="@+id/lListEditActivity9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/textDay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today-Wed |"
+                android:textColor="#E5594A" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:30-12:30"
+                android:textColor="#4DCDC0" >
+            </TextView>
+        </LinearLayout>
+        </LinearLayout>
+         <ImageView
+        android:id="@+id/imgExpand1"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_expand_lighter" />
+    </RelativeLayout>
+	<!-- <ListView 
+	    android:id="@+id/listChat"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="80"></ListView> -->
+</LinearLayout>
+<ImageView
+        android:id="@+id/imgSide"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/usericon" />
+</RelativeLayout>

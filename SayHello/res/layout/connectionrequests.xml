@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F6F6"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <RelativeLayout
+            android:id="@+id/lConnReq"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:background="@drawable/topbar" >
+
+            <ImageView
+                android:id="@+id/imgBack"
+                style="@style/imgLogo"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/logoauth" />
+
+            <TextView
+                android:id="@+id/textConnReq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Connection Requests"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lConnectionReq"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:id="@+id/lItemChat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25" >
+
+                <ImageView
+                    android:id="@+id/imgConnReq"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/avatar_list_view" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lItemChat2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textItemChatName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CityGuy245"
+                    android:textColor="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/textItemMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New sailor in town.Travelling and need some friends to me..."
+                    android:textColor="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lItemChat3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25" >
+
+                <ImageView
+                    android:id="@+id/imgChatIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/icn_chat" />
+            </LinearLayout>
+            <!--
+         <ListView 
+        android:id="@+id/listConnReq"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"></ListView>
+            -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgSide"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/usericon" />
+
+</RelativeLayout>

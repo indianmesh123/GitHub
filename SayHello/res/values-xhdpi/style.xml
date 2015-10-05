@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="splashBar">
+        <item name="android:layout_height">10sp</item>
+    </style>
+
+    <style name="logoSize">
+        <item name="android:layout_height">55sp</item>
+        <item name="android:layout_width">47sp</item>
+    </style>
+
+    <style name="textCreateAccount">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="imageSelect">
+        <item name="android:layout_height">85dp</item>
+        <item name="android:layout_width">85dp</item>
+    </style>
+
+    <style name="imgLogo">
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="marginTopImage">
+        <item name="android:layout_marginRight">21dp</item>
+        <item name="android:layout_marginTop">22dp</item>
+    </style>
+
+    <style name="marginRightArrow">
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:layout_marginTop">25dp</item>
+    </style>
+
+    <style name="imageTopSize">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginRight">14dp</item>
+    </style>
+
+    <style name="timeLayoutHeight">
+        <item name="android:layout_height">90dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FCFCFC"
+    android:orientation="horizontal"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:id="@+id/imagelayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="30"
+        android:gravity="left|center_vertical" >
+
+        <ImageView
+            android:id="@+id/imgActivityType"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lListEditActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_weight="60"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textMeetingMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:text="Coffee at Starbucks anybody?"
+            android:textColor="#000" />
+
+        <LinearLayout
+            android:id="@+id/lListEditAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/textDay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E5594A" />
+
+            <TextView
+                android:id="@+id/textComma1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text=","
+                android:textColor="#E5594A"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textDay2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tu"
+                android:textColor="#E5594A" />
+
+            <TextView
+                android:id="@+id/textComma2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text=","
+                android:textColor="#E5594A"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDay3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E5594A" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textComma3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text=","
+                android:textColor="#E5594A"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDay4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E5594A" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textComma4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text=","
+                android:textColor="#E5594A"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDay5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E5594A" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textComma5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text=","
+                android:textColor="#E5594A"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textDay6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E5594A" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="|"
+                android:textColor="#E5594A" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="8:30"
+                android:textColor="#4DCDC0" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="-"
+                android:textColor="#4DCDC0" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="12:30"
+                android:textColor="#4DCDC0" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lListEditActivity1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/textStartDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                android:textColor="#E5594A" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textHifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="-"
+                android:textColor="#E5594A" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textEndDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Wed"
+                android:textColor="#E5594A" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="|"
+                android:textColor="#E5594A" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textStartTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#4DCDC0" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="-"
+                android:textColor="#4DCDC0" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textEndTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:textColor="#4DCDC0" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgExpand"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="10"
+        android:background="@drawable/btnexpand" />
+
+    <LinearLayout
+        android:id="@+id/options"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="30"
+        android:gravity="center"
+        android:visibility="gone"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/imageDelete"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_delete" />
+
+        <ImageView
+            android:id="@+id/imageEdit"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_edit" />
+
+        <ImageView
+            android:id="@+id/imageSearch"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_search" />
+    </LinearLayout>
+
+</LinearLayout>

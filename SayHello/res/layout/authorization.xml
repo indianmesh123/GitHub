@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".Authorization" >
+
+    <RelativeLayout
+        android:id="@+id/lAuth"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:background="@drawable/topbar" >
+
+        <ImageView
+            android:id="@+id/imgLogoAuth"
+            style="@style/imgLogo"
+            android:src="@drawable/logoauth" />
+
+        <TextView
+            android:id="@+id/textAuth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Authorization"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/lAuth5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="10dp"
+          >
+
+            <ImageView
+                android:id="@+id/imgNextAuth"
+                style="@style/marginRightArrow"
+                android:layout_width="10dp"
+                android:layout_height="18dp"                  	
+                android:background="@drawable/nexticon"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lAuth1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="Please confirm country code and your phone number."
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/lAuth2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="22" >
+
+            <TextView
+                android:id="@+id/textCountry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:paddingRight="10dp"
+                android:text="USA"
+                android:textColor="#4DCDC0"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lAuthArrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="78"
+            android:gravity="right|center_vertical" >
+
+            <ImageView
+                android:id="@+id/imgAuthArrow"
+                android:layout_width="8dp"
+                android:layout_height="14dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/authward" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/lAuth3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="22"
+            android:gravity="right|center"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/textCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="+46"
+                android:textColor="#4DCDC0"
+                android:textSize="18dp" >
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="78" >
+
+            <EditText
+                android:id="@+id/editEnterNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="Enter your phone number"
+                android:inputType="numberSigned"
+                android:paddingLeft="10dp"
+                android:textColor="#000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="55" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center" >
+
+            <Button
+                android:id="@+id/buttonOne"
+                style="@style/phoneButton"
+                android:background="@drawable/buttononepress" >
+            </Button>
+
+            <Button
+                android:id="@+id/buttonTwo"
+                style="@style/phoneButton"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/buttontwopress"
+                android:gravity="center"
+                android:textColor="#000" >
+            </Button>
+
+            <Button
+                android:id="@+id/buttonThree"
+                style="@style/phoneButton"
+                android:background="@drawable/buttonthreepress"
+                android:gravity="right"
+                android:textColor="#000" >
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/buttonFour"
+                style="@style/phoneButton"
+                android:background="@drawable/buttonfourpress"
+                android:gravity="center"
+                android:textColor="#000" >
+            </Button>
+
+            <Button
+                android:id="@+id/buttonFive"
+                style="@style/phoneButton"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/buttonfivepress"
+                android:textColor="#000" >
+            </Button>
+
+            <Button
+                android:id="@+id/buttonSix"
+                style="@style/phoneButton"
+                android:background="@drawable/buttonsixpress"
+                android:gravity="center"
+                android:textColor="#000" >
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/buttonSeven"
+                style="@style/phoneButton"
+                android:background="@drawable/buttonsevenpress"
+                android:gravity="center"
+                android:textColor="#000" >
+            </Button>
+
+            <Button
+                android:id="@+id/buttonEight"
+                style="@style/phoneButton"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/buttoneightpress"
+                android:gravity="center"
+                android:textColor="#000" >
+            </Button>
+
+            <Button
+                android:id="@+id/buttonNine"
+                style="@style/phoneButton"
+                android:background="@drawable/buttonninepress"
+                android:gravity="center"
+                android:textColor="#000" >
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/buttonBlank"
+                style="@style/phoneButton"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:textColor="#000" >
+            </Button>
+
+            <Button
+                android:id="@+id/buttonZero"
+                style="@style/phoneButton"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/buttonzeropress"
+                android:gravity="center"
+                android:textColor="#000" >
+            </Button>
+
+            <Button
+                android:id="@+id/buttonBack"
+                android:layout_width="15dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/backbuttonpress"
+                android:gravity="center"
+                android:textColor="#000" >
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/bottomLine"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/bottomline"
+        android:baselineAlignBottom="true" />
+
+</LinearLayout>

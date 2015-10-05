@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"   
+    >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:weightSum="100" 
+   	 android:background="#F6F6F6">
+   <RelativeLayout 
+        android:id="@+id/lTellFriend"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"     	
+           android:background="@drawable/topbar"
+          
+        >
+        <ImageView 
+            android:id="@+id/imgLogoTerms"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/backicon"/>
+        <TextView 
+            android:id="@+id/textSayHello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Say Hello"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+       		 android:layout_gravity="center"
+            android:textStyle="bold"
+         />
+    </RelativeLayout>
+	<LinearLayout 
+	    android:id="@+id/lTellFriend1"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="10"
+	    android:gravity="center">
+	    <TextView 
+	        android:id="@+id/textTellFriend"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Tell a friend about our amazing application."
+	        android:textColor="#000"/>
+	</LinearLayout>
+	<LinearLayout 
+	    android:id="@+id/lTellFriend2"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="10"
+	      android:background="#E1DFE0"
+	    android:gravity="center">
+	    <TextView 
+	        android:id="@+id/textMail"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Mail"
+	      	android:gravity="center"
+	        android:textColor="#000"/>
+	</LinearLayout>
+	<LinearLayout 
+	    android:id="@+id/lTellFriend3"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	        android:background="#E1DFE0"
+	    android:layout_marginTop="15dp"
+	    android:layout_weight="10"
+	    android:gravity="center">
+	    <TextView 
+	        android:id="@+id/textMessage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Message"
+	        android:textColor="#000"/>
+	</LinearLayout>
+	<LinearLayout 
+	    android:id="@+id/lTellFriend4"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	     android:orientation="horizontal" 
+	    android:layout_weight="50"
+	  >
+</LinearLayout>
+<LinearLayout 
+	    android:id="@+id/lTellFriend5"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	     android:orientation="horizontal" 
+	    android:layout_weight="10"
+	  >
+	    <ImageView
+                android:id="@+id/imgBottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo_bottom" />
+</LinearLayout>
+</LinearLayout>
+<ImageView 
+    android:id="@+id/imgSide"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:background="@drawable/usericon"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="2dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"/>
+</RelativeLayout>

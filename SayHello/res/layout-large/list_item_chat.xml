@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F6F6"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <RelativeLayout
+            android:id="@+id/lSearch1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:background="@drawable/topbar" >
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/backicon" />
+
+            <TextView
+                android:id="@+id/textSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Chat"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15" >
+
+            <LinearLayout
+                android:id="@+id/lItemChat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imgChatProfile"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/avatar_list_view" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lItemChat2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="65"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lChatName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CityGuy245"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/lChatMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coffee at Starbucks anybody?"
+                    android:textColor="#000" />
+
+                <LinearLayout
+                    android:id="@+id/lItemChat3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lChatDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Today-Wed  |"
+                        android:textColor="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/lChatTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8:30-12:30"
+                        android:textColor="@android:color/darker_gray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgChatGray"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@drawable/btn_chat_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15" >
+
+            <LinearLayout
+                android:id="@+id/lItemChat5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imgChatProfile1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/avatar_list_view" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lItemChat9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="65"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lChatName10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CityGuy245"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/lChatMessage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coffee at Starbucks anybody?"
+                    android:textColor="#000" />
+
+                <LinearLayout
+                    android:id="@+id/lItemChat8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/lChatDay1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Today-Wed  |"
+                        android:textColor="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/lChatTime1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8:30-12:30"
+                        android:textColor="@android:color/darker_gray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgChatGray1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@drawable/btn_chat_green" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lSearch11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10" >
+
+            <LinearLayout
+                android:id="@+id/lSearch10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <ImageView
+                    android:id="@+id/imgLeft"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="40"
+                    android:background="@drawable/btn_mv_active" />
+
+                <ImageView
+                    android:id="@+id/imgCentre"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@drawable/btn_refresh_active" />
+
+                <ImageView
+                    android:id="@+id/imgRight"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="40"
+                    android:background="@drawable/btn_list_view_active" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgSide"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/usericon" />
+
+</RelativeLayout>
